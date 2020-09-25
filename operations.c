@@ -41,7 +41,7 @@ int main()
         default: printf("\nYou have selected the wrong option. Try again!");
     }
    
-    }while(opt==5);
+    }while(opt=!=5);
    
     return 0;
 }
