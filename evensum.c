@@ -1,17 +1,23 @@
 #include <stdio.h>
-/*This code sum even numbers from 0-n. n is given by the user*/
+/*This code will calculate the sum of all the even number from 1-n. 
+n will be provided by the user. The code will also tell the user how many numbers are on the sum*/
 int main()
 {
-    int n, i=0, sum=0;
-  printf("How many numbers would you like to sum: ");
-  scanf("%i", &n);
-  
-  while(i<=n){
-      if(i%2==0){
-          sum+=i;
-      }
-      i++;
-  }
-printf("The total sum of even number is: %i", sum);
+   int num, counter=0, sum=0;
+printf("Until what number do you want to sum?: ");
+scanf("%i", &num);
+
+//Get all even numbers
+
+    for(int i=0;i<=num;i++){
+        if(i%2==0){
+            counter++;
+            sum+=i;
+        }
+        
+    }
+    
+    printf("There are %i elements in this sum\n", counter);
+    printf("The sum is: %i", sum);
     return 0;
 }
